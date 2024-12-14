@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "postinstall": "npx lefthook install"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "lefthook": "^1.9.2"
+  }
+}

@@ -1,0 +1,19 @@
+pre-commit:
+  parallel: true
+  verbose: true
+  commands:
+    service-check:
+      root: 'orders-service/'
+      exclude:
+        - 'node_modules/**/*'
+        - 'cdk.out/**/*'
+      run: npx @biomejs/biome check --write --staged --no-errors-on-unmatched
+      stage_fixed: true
+    client-check:
+      root: "orders-service-client/"
+      exclude:
+        - 'node_modules/**/*'
+        - 'dist/**/*'
+        - 'build/**/*'
+      run: npx @biomejs/biome check --write --staged --no-errors-on-unmatched
+      stage_fixed: true

@@ -1,0 +1,13 @@
+export enum Region {
+  dublin = 'eu-west-1',
+  london = 'eu-west-2',
+  frankfurt = 'eu-central-1',
+  virginia = 'us-east-1',
+}
+
+export enum Stage {
+  develop = 'develop',
+  staging = 'staging',
+  prod = 'prod',
+  test = 'test',
+}
